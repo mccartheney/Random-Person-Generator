@@ -1,0 +1,13 @@
+version: 'latest'
+
+services:
+  api : 
+    build :
+      context : .
+      dockerfile : BackEnd.Dockerfile
+
+    volumes :
+      - ./backend:/app
+
+    ports : 
+      - 8004:8004
