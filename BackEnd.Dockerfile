@@ -2,12 +2,16 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-COPY ./backend ./app
+COPY ./backend/pyproject.toml /app/
+
+COPY ./backend /app/
 
 RUN pip install poetry
 
 RUN poetry config virtualenvs.create false
 
-VOLUME [ "/app" ]
+RUN poetry install
 
-EXPOSE 8004
+EXPOSE 8000
+
+CMD [ "python", "src/main.py" ]
