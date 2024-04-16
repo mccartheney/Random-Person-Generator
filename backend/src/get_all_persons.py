@@ -8,10 +8,10 @@ def get_all_persons () :
         persons_data = ""
 
         # open databse file
-        with open ("./dataBase/db.json", "r") as db_file:
+        with open ("./src/dataBase/db.json", "r") as db_file:
             # load json from database
             persons_data = json.load(db_file)
-
+            
             # close database
             db_file.close()
         

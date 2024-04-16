@@ -31,7 +31,7 @@ def create_database (number_of_persons) :
         persons.append(new_person_dict)
 
     # transform person array in json
-    all_persons_json = json.dumps(persons, indent=4)
+    all_persons_json = json.dumps(persons, indent=None)
 
     # open database json file 
     with open ("./dataBase/db.json", "w") as db_file :
