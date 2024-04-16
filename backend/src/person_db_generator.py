@@ -34,7 +34,7 @@ def create_database (number_of_persons) :
     all_persons_json = json.dumps(persons, indent=None)
 
     # open database json file 
-    with open ("./dataBase/db.json", "w") as db_file :
+    with open ("./src/dataBase/db.json", "w") as db_file :
 
         # write person json data in file
         db_file.write(all_persons_json)
