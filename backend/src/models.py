@@ -5,4 +5,3 @@ class Person (BaseModel) :
     Name : str
     age : int
     address : str
-    image : str

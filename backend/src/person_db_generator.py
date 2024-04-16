@@ -22,7 +22,7 @@ def create_database (number_of_persons) :
         address = faker.address()
 
         # create a person model with fake info
-        new_person = Person(id=id, Name=name, age=age, address=address, image="d")
+        new_person = Person(id=id, Name=name, age=age, address=address)
 
         # tranform person model in dictionary (to transform in json after)
         new_person_dict = new_person.dict()
