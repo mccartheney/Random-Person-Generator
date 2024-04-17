@@ -17,7 +17,7 @@ Instantly create unique characters with our Random Person Generator Api. Perfect
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your_username/your_repository.git
+https://github.com/mccartheney/Random-Person-Generator
 ```
 
 2. Navigate to the project directory:
